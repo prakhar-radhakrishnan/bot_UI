@@ -1,7 +1,4 @@
 # Bot UI
-
-Here’s the rewritten **Overview** section with GitHub markdown formatting:
-
 ---
 
 ## Overview
