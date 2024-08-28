@@ -66,4 +66,3 @@ The frontend provides the user interface for message input, while the backend AP
 
 ---
 
-Feel free to copy and paste this into your `README.md` file for proper formatting on GitHub.
