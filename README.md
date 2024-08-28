@@ -1,8 +1,19 @@
-Here's the content rewritten with GitHub markdown formatting:
+# Bot UI
+
+Here’s the rewritten **Overview** section with GitHub markdown formatting:
 
 ---
 
-# Bot UI
+## Overview
+
+This project is a simple chat application featuring:
+
+- **Frontend:** Built with React, allowing users to send messages.
+- **Backend API:** Handles incoming messages and echoes them back to the frontend.
+
+The frontend provides the user interface for message input, while the backend API processes and responds with the same message.
+
+---
 
 ## Setup Instructions
 
