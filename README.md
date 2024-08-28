@@ -1,15 +1,17 @@
 1. Clone the repo in your local machine
    
 git clone https://github.com/prakhar-radhakrishnan/bot_UI.git
+
 1.a. Move into the bot-ui directory.
 cd bot-ui
 
 3. Set Up the Backend
 Navigate to the api directory and install the necessary dependencies:
+
 cd api
 npm install
 
-4. Start the Backend
+5. Start the Backend
 Run the backend server locally:
 
 npm start
