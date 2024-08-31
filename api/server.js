@@ -4,10 +4,14 @@ const cors = require('cors');
 const app = express();
 
 // Middleware
-app.use(cors({
-  origin: 'https://bot-px.vercel.app', // Allow only your frontend domain
-}));
 app.use(express.json()); // To parse JSON bodies
+
+// CORS Configuration
+app.use(cors({
+  origin: 'https://bot-px.vercel.app', // Replace with your frontend URL
+  methods: 'POST', // Allow only POST requests
+  allowedHeaders: ['Content-Type'], // Allow only specific headers
+}));
 
 // Echo endpoint
 app.post('/echo', (req, res) => {
