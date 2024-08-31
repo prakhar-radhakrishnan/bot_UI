@@ -4,7 +4,9 @@ const cors = require('cors');
 const app = express();
 
 // Middleware
-app.use(cors()); // To allow requests from your React app
+app.use(cors({
+  origin: 'https://bot-px.vercel.app', // Allow only your frontend domain
+}));
 app.use(express.json()); // To parse JSON bodies
 
 // Echo endpoint
