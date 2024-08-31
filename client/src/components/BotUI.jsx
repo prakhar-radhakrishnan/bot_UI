@@ -10,7 +10,7 @@ const BotUI = () => {
     e.preventDefault();
     try {
       // Send the message to the backend
-      const res = await axios.post('https://bot-ui-api.vercel.app/echo', { message });
+      const res = await axios.post('https://bot-api-lemon.vercel.app/', { message });
 
 
       // Update the response state with the reply from the backend
