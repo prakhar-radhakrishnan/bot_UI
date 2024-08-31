@@ -1,6 +1,21 @@
- const express = require('express');
+const express = require('express');
+const cors = require('cors');
+
 const app = express();
-app.use("/", (req,res)=>{
-  res.send("Servre is rfdsfunning")
+
+// Middleware
+app.use(cors()); // To allow requests from your React app
+app.use(express.json()); // To parse JSON bodies
+
+// Echo endpoint
+app.post('/echo', (req, res) => {
+  const userMessage = req.body.message;
+  // Respond back with the user's message
+  res.json({ response: `You said: ${userMessage}` });
 });
-app.listen (5000, console.log("Server started on port 5000"));
+
+// Start the server
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
