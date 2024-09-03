@@ -11,7 +11,7 @@ app.use(express.json()); // To parse JSON bodies
 app.post('/echo', (req, res) => {
   const userMessage = req.body.message;
   // Respond back with the user's message
-  res.json({ response: `You said: ${userMessage}` });
+  res.json({ response: `${userMessage}` });
 });
 
 // Start the server
